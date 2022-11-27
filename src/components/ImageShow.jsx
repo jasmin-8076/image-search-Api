@@ -1,8 +1,14 @@
 import React from 'react'
 
-function ImageShow() {
+
+function ImageShow({image}) {
+
+  // console.log(image.alt_description);
   return (
-    <div>ImageShow</div>
+
+    <div>
+      <img src={image.urls.small} alt={image.alt_description}/>
+    </div>
   )
 }
 
